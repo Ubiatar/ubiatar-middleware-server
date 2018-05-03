@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js --env=LOCALE"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,15 @@
   },
   "homepage": "https://github.com/Ubiatar/ubiatar-middleware-server#readme",
   "dependencies": {
-    "hapi": "^17.3.1"
+    "async": "^2.6.0",
+    "fs": "0.0.1-security",
+    "hapi": "^17.3.1",
+    "hapi-log": "^1.0.0",
+    "minimist": "^1.2.0",
+    "moment": "^2.22.0",
+    "socket.io": "^2.1.0"
+  },
+  "script": {
+    "start": "node server.js --env=LOCALE"
   }
 }
