@@ -12,8 +12,7 @@ const log = (realm, result, message, params) => {
   }
 }
 
-
-
+        
 exports.plugin={
     register: (server,options)=>{
         const expose = {
